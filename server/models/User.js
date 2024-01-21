@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    dp: {
+    profileImage: {
       type: String,
       default: "",
     },

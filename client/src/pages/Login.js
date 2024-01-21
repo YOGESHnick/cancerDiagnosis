@@ -8,6 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const userId=useGetUserId();
+
   console.log(userId);
 
   const loginHandler = async (event) => {

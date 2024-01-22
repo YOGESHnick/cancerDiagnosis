@@ -38,12 +38,15 @@ const Login = () => {
   return (
     <div className="login">
       <div className="form">
-        <img src="" className="" alt="" />
+        <div className="left">
+          <h3>HealthBub</h3>
+        </div>
         <form onSubmit={loginHandler}>
           {/* <img src="logo.png" className="logo" alt="logo" /> */}
           <input type="text" placeholder="Email id" value={email} onChange={(event) => setEmail(event.target.value)} />
           <input type="password" placeholder="Enter password" value={password} onChange={(event) => setPassword(event.target.value)} />
           <button>Login</button>
+          <p className="newUser" >New User? <a className="newUser" href="/register">Sign Up</a></p>
         </form>
       </div>
     </div>

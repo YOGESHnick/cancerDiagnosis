@@ -40,9 +40,8 @@ const Register = () => {
 
   return (
     <div className="register">
-      <div className="form">
-        <img src="" className="" alt="" />
-        <form onSubmit={handleSubmit}>
+      <div className="reg">
+        <form className="registration" onSubmit={handleSubmit}>
 
           <label htmlFor="file-upload" className='custom-file-upload'>
             <img src={avatar||profileImage} alt="" />
@@ -60,7 +59,7 @@ const Register = () => {
           <input type="text" placeholder="Your Name" value={name} onChange={(event) => setName(event.target.value)} />
           <input type="text" placeholder="Email id" value={email} onChange={(event) => setEmail(event.target.value)} />
           <input type="password" placeholder="Enter password" value={password} onChange={(event) => setPassword(event.target.value)} />
-          <button>Login</button>
+          <button>Register</button>
         </form>
       </div>
     </div>

@@ -21,15 +21,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>App</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route
+          <Route path="/diagnose" element={<Diagnose />} />
+          {/*  Next line is needed, commented out for D E V E L O P M E N T   P U R P O S E S */}
+          {/* <Route
             path="/diagnose"
             element={isLoggedIn ? <Diagnose /> : (<Navigate to="/" />)}
-          />
+          /> */}
         </Routes>
       </Router>
     </div>

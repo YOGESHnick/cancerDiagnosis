@@ -72,10 +72,8 @@ const Diagnose = ()=> {
   };
 
   return (
-    <div className="Diagnose">
-      <form onSubmit={handleSubmit}>
-
-
+    <div className="diagnose">
+      <form className="inputForm" onSubmit={handleSubmit}>
         <label>Radius Mean:</label>
         <input
           type="text"

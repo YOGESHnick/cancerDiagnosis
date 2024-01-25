@@ -134,3 +134,44 @@ body{
     width: 50vw;
   }
 }
+/* D I A G N O S I S   PAGE */
+.diagnose{
+  padding: 10vh;
+}
+.diagnose, .diagnose form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15vh; */
+}
+.diagnose form{
+  background-color: rgb(246, 154, 154);
+  border-radius: 2vw;
+  padding: 5vw;
+}
+.diagnose input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+.inputForm{
+  width: 30vw;
+}
+.inputForm input, .inputForm button{
+  border-radius: 1vh;
+  height: 2vw;
+  width: 15vw;
+}
+.inputForm button{
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .diagnose form{
+    width: 100%;
+  }
+  .inputForm input, .inputForm button{
+    width: 100%;
+    height: 5vh;
+  }
+}

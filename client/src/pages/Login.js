@@ -46,7 +46,8 @@ const Login = () => {
           <input type="text" placeholder="Email id" value={email} onChange={(event) => setEmail(event.target.value)} />
           <input type="password" placeholder="Enter password" value={password} onChange={(event) => setPassword(event.target.value)} />
           <button>Login</button>
-          <p className="newUser" >New User? <a className="newUser" href="/register">Sign Up</a></p>
+          <br />
+          <p className="newUser" >New to the Bubble? <a className="newUser" href="/register"> Join us </a></p>
         </form>
       </div>
     </div>
